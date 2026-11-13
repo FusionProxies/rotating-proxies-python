@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=rotating-proxies-python">
+  <a href="https://fusionproxy.net/?utm_source=github&utm_medium=referral&utm_campaign=rotating-proxies-python">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-dark.png">
       <img src="https://raw.githubusercontent.com/FusionProxies/.github/main/assets/logo-on-light.png" alt="Fusion Proxy" height="52">
@@ -93,13 +93,22 @@ sticky:   ['75.201.158.13', '75.201.158.13', '75.201.158.13', '75.201.158.13']
 | Keep an IP | Pin a proxy yourself | `-sessid-` in the username |
 | Cost | Free or per proxy | Per GB |
 
+## Tests
+
+```bash
+pip install -r requirements.txt pytest
+pytest
+```
+
+The tests cover the round robin, retiring dead proxies, resting blocked ones until the cooldown ends, and even rotation under 8 threads. No network, proxy or credentials needed.
+
 ## Related
 
 - [proxy-checker](https://github.com/FusionProxies/proxy-checker): check a list before you rotate it
 - [python-requests-retry](https://github.com/FusionProxies/python-requests-retry): retries and backoff
 - [python-async-scraping](https://github.com/FusionProxies/python-async-scraping): many requests at once
 
-[Fusion Proxy rotating residential proxies](https://fusionproxy.net/proxies/rotating?utm_source=github&utm_medium=rotating-proxies-python) from $2.95/GB, with a [free trial](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=rotating-proxies-python).
+[Fusion Proxy rotating residential proxies](https://fusionproxy.net/proxies/rotating?utm_source=github&utm_medium=referral&utm_campaign=rotating-proxies-python) from $2.95/GB, with a [free trial](https://fusionproxy.net/free-trial?utm_source=github&utm_medium=referral&utm_campaign=rotating-proxies-python).
 
 ## License
 
